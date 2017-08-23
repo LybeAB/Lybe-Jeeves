@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+
+    <route url="/V1/Jeeves/getHelloWorld" method="GET">
+        <service class="Lybe\Jeeves\Api\ApiInterface" method="getHelloWorld"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/Jeeves/createUser" method="GET">
+        <service class="Lybe\Jeeves\Api\ApiInterface" method="createUser"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/Jeeves/updateUser" method="GET">
+        <service class="Lybe\Jeeves\Api\ApiInterface" method="updateUser"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/Jeeves/removeUserRole" method="GET">
+        <service class="Lybe\Jeeves\Api\ApiInterface" method="removeUserRole"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/Jeeves/getDeliveryAddresses" method="GET">
+        <service class="Lybe\Jeeves\Api\ApiInterface" method="getDeliveryAddresses"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/Jeeves/createDeliveryAddress" method="GET">
+        <service class="Lybe\Jeeves\Api\ApiInterface" method="createDeliveryAddress"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/Jeeves/updateDeliveryAddress" method="GET">
+        <service class="Lybe\Jeeves\Api\ApiInterface" method="updateDeliveryAddress"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/Jeeves/deleteDeliveryAddress" method="GET">
+        <service class="Lybe\Jeeves\Api\ApiInterface" method="deleteDeliveryAddress"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/Jeeves/getCustomerOrders" method="GET">
+        <service class="Lybe\Jeeves\Api\ApiInterface" method="getCustomerOrders"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/Jeeves/getOrderLines" method="GET">
+        <service class="Lybe\Jeeves\Api\ApiInterface" method="getOrderLines"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/Jeeves/getStockInfo" method="GET">
+        <service class="Lybe\Jeeves\Api\ApiInterface" method="getStockInfo"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/Jeeves/orderPricelist" method="GET">
+        <service class="Lybe\Jeeves\Api\ApiInterface" method="orderPricelist"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+</routes>

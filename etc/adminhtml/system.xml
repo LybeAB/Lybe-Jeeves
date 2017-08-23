@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/system_file.xsd">
+    <system>
+        <tab id="lybe_jeeves" translate="label" sortOrder="1">
+            <label>Jeeves</label>
+        </tab>
+        <section id="jeeves" translate="label" sortOrder="1" showInDefault="1"
+          showInWebsite="1" showInStore="1">
+            <label>Jeeves Setting</label>
+            <tab>lybe_jeeves</tab>
+            <resource>Tutorial_SimpleNews::system_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1"
+                   showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="enable_in_frontend" translate="label" type="select" sortOrder="1"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable in frontend</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="head_title" translate="label comment" type="text" sortOrder="2"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Head title</label>
+                    <comment>Fill head title of news list page at here</comment>
+                    <validate>required-entry</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <swedol_jeeves>
+            <api>
+                <mode>off</mode>
+                <public>external</public>
+                <test_wsdl_url>http://10.1.1.78:90/Jeeves2MagentoWSTest.asmx?wsdl</test_wsdl_url>
+                <test_public_wsdl_url>http://10.1.1.78:90/Jeeves2MagentoWSTest.asmx?wsdl</test_public_wsdl_url>
+                <test_company_id>1</test_company_id>
+                <live_wsdl_url>http://10.1.1.78:90/Jeeves2MagentoWSTest.asmx?wsdl</live_wsdl_url>
+                <live_company_id>1</live_company_id>
+            </api>
+            <test>
+                <test_action>0</test_action>
+            </test>
+        </swedol_jeeves>
+    </default>
+</config>
